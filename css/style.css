@@ -95,15 +95,13 @@ body {
   padding: 20px 0 20px 0;
 }
 
-.header-logo {
-  display: flex;
-  align-items: center;
-  margin-right: 81px;
-}
-
 .header-wrapper {
   display: flex;
   align-items: center;
+}
+
+.header-wrapper_padding {
+  margin-right: 81px;
 }
 
 .header-nav {
@@ -340,7 +338,6 @@ body {
 
 .header-link_size {
   font-size: 16px;
-  line-height: 16px;
 }
 
 .header-audio {
