@@ -89,10 +89,17 @@ body {
 }
 
 /* header-top ----------------------------------------------------------- */
+.header {
+  position: relative;
+}
 
 .header-top {
   display: flex;
   padding: 20px 0 20px 0;
+}
+
+.burger-btn {
+  display: none;
 }
 
 .header-wrapper {

@@ -41,3 +41,117 @@
     margin-right: 36px;
   }
 }
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 540px;
+  }
+  .header-wrapper_burger-spase {
+    justify-content: space-between;
+  }
+  .past {
+    display: none;
+  }
+  .header-btn_size:last-child {
+    border-right: none;
+  }
+  .live span {
+    display: none;
+  }
+  .live {
+    padding: 0;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    max-width: 24px;
+    min-width: 24px;
+    border: none;
+  }
+  .live svg {
+    left: 2px;
+  }
+  .header-nav_margin {
+    margin-right: 23px;
+  }
+  .header-item_margin:not(:last-child) {
+    margin-right: 29px;
+  }
+  .burger-btn {
+    display: flex;
+    flex-direction: column;
+    width: 24px;
+    height: 24px;
+    z-index: 3;
+  }
+  .burger-btn:focus .burger-line:nth-child(1) {
+    display: none;
+
+  }
+  .burger-btn:focus .burger-line:nth-child(2) {
+    position: relative;
+    top: 2px;
+    transform: translateY(8px) rotate(45deg);
+    transition: .3s ease-in-out;
+  }
+  .burger-btn:focus .burger-line:nth-child(3) {
+    position: relative;
+    top: 8px;
+    transform: translateY(-8px) rotate(-45deg);
+    transition: .3s ease-in-out;
+  }
+  .burger-line {
+    width: 24px;
+    height: 3px;
+    background-color: var(--medium-purpul-color);
+    border: 1px solid var(--medium-purpul-color);
+    border-radius: 50px;
+  }
+  .burger-line:nth-child(1) {
+    margin-bottom: 8px;
+  }
+  .burger-line:nth-child(2) {
+    margin-bottom: 7px;
+  }
+
+
+  .header-nav_top {
+    position: absolute;
+    top: 162px;
+    margin-right: 0;
+    z-index: 2;
+  }
+  .header-list_display-768 {
+    display: block;
+    columns: 2;
+    /*display: none;*/
+    width: 270px;
+    height: 192px;
+  }
+  .header-link_margin-768:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 62px;
+  }
+  .header::before {
+    content: " ";
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--medium-gray-color);
+    background-image: url("");
+    z-index: 2;
+  }
+
+  .header-list_display-768::after {
+    content: url("../img/header/burger-bg-open.png");
+    position: absolute;
+    bottom: -110px;
+    left: 284px;
+
+  }
+
+  .nav-open {
+
+  }
+}
