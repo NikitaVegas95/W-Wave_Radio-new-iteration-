@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W-wave Радио</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="W-Wave Радио">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="icon" href="img/header/favicon.png" type="imege/svg+xm">
+  <title>W-wave Радио</title>
 </head>
 <body>
   <header class="header">
-    <div class="header-top">
+    <div class="header-top container">
       <a class="header-logo" href="index.html">
         <picture class="header-picture">
           <source srcset="img/header/logo-320.png" media="(max-width: 320px)">
@@ -17,7 +23,7 @@
           <img src="img/header/logo.png" alt="Логотип W-wave Радио">
         </picture>
       </a>
-      <div class="">
+      <div class="header-wrapper">
         <nav class="header-nav">
           <ul class="header-list list-reset">
             <li class="header-item">
@@ -37,54 +43,72 @@
             </li>
           </ul>
         </nav>
-        <div class="">
+        <div class="header-wrapper">
           <div class="header-search">
             <label class="header-label">
-              <input class="header-input">
+              <input placeholder="Поиск по сайту" class="header-input" type="search">
             </label>
-            <button type="button" class="header-btn btn-reset"></button>
+            <button class="search-btn btn-reset"></button>
           </div>
-          <button type="button" class="header-btn btn-reset">
+          <button type="button" class="header-btn header-btn_focus btn-reset">
             Вход
           </button>
         </div>
       </div>
     </div>
-    <div class="header-bottom">
-      <nav class="header-nav">
+    <span class="line"></span>
+    <div class="header-bottom container">
+      <nav class="header-nav header-nav_margin">
         <ul class="header-list list-reset">
-          <li class="header-item">
-            <a class="header-link" href="#">Новости</a>
+          <li class="header-item header-item_margin">
+            <a class="header-link header-link_size" href="#">Новости</a>
           </li>
-          <li class="header-item">
-            <a class="header-link" href="#">Блоги</a>
+          <li class="header-item header-item_margin">
+            <a class="header-link header-link_size" href="#">Блоги</a>
           </li>
-          <li class="header-item">
-            <a class="header-link" href="#">Топы</a>
+          <li class="header-item header-item_margin">
+            <a class="header-link header-link_size" href="#">Топы</a>
           </li>
-          <li class="header-item">
-            <a class="header-link" href="#">Опросы</a>
+          <li class="header-item header-item_margin">
+            <a class="header-link header-link_size" href="#">Опросы</a>
           </li>
-          <li class="header-item">
-            <a class="header-link" href="#">Рейтинги</a>
+          <li class="header-item header-item_margin">
+            <a class="header-link header-link_size" href="#">Рейтинги</a>
           </li>
-          <li class="header-item">
-            <a class="header-link" href="#">Реклама</a>
+          <li class="header-item header-item_margin">
+            <a class="header-link header-link_size" href="#">Реклама</a>
           </li>
         </ul>
       </nav>
       <div class="header-audio">
-        <button class="header-btn btn-reset">
-          <span class="header-text">Ранее в&nbsp;эфире</span>
+        <button class="header-btn header-btn_size header-btn_width btn-reset">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
+          </svg>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0Z" fill="#A1A6B4"/>
+            <rect x="7" y="6" width="2" height="8" rx="1" fill="white"/>
+            <rect x="11" y="6" width="2" height="8" rx="1" fill="white"/>
+          </svg>
+          <span class="header-text header-text_size header-text_margin">Ранее в&nbsp;эфире</span>
           <span class="header-text">&laquo;Музыка&raquo;</span>
         </button>
-        <button class="header-btn btn-reset">
-          <span class="header-text">Сейчас в&nbsp;эфире</span>
+        <button class="header-btn header-btn_size btn-reset">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
+          </svg>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0Z" fill="#A1A6B4"/>
+            <rect x="7" y="6" width="2" height="8" rx="1" fill="white"/>
+            <rect x="11" y="6" width="2" height="8" rx="1" fill="white"/>
+          </svg>
+          <span class="header-text header-text_size header-text_margin">Сейчас в&nbsp;эфире</span>
           <span class="header-text">&laquo;Как так?&raquo;</span>
         </button>
       </div>
-      <span class="header-text">12+</span>
+      <span class="header-text"></span>
     </div>
+    <span class="line"></span>
   </header>
 
 </body>
