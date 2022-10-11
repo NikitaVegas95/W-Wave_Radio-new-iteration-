@@ -105,6 +105,7 @@ body {
 .header-wrapper {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .header-wrapper_padding {
@@ -299,6 +300,7 @@ body {
 
 .header-bottom {
   display: flex;
+  position: relative;
   align-items: center;
   padding: 8px 0 10px 0;
 }
