@@ -85,17 +85,17 @@
     height: 24px;
     z-index: 3;
   }
-  .burger-btn_close:focus .burger-line:nth-child(1) {
+  .burger-btn_close .burger-line:nth-child(1) {
     display: none;
 
   }
-  .burger-btn_close:focus .burger-line:nth-child(2) {
+  .burger-btn_close .burger-line:nth-child(2) {
     position: relative;
     top: 2px;
     transform: translateY(8px) rotate(45deg);
     transition: .3s ease-in-out;
   }
-  .burger-btn_close:focus .burger-line:nth-child(3) {
+  .burger-btn_close .burger-line:nth-child(3) {
     position: relative;
     top: 8px;
     transform: translateY(-8px) rotate(-45deg);
@@ -157,8 +157,8 @@
 
   }
 
-  .nav-open {
-
+  .header-nav_open {
+    left: 0;
   }
 }
 
@@ -263,5 +263,89 @@
   }
   .live span {
     display: flex;
+  }
+  .header-btn_size {
+    border: none;
+    padding-left: 0;
+    padding-top: 40px;
+    min-width: 128px;
+    max-width: 128px;
+  }
+  .header-btn svg {
+    left: 0;
+  }
+  .header-audio {
+    position: absolute;
+    top: 44px;
+    left: -1000px;
+    transition: left .3s ease-in-out;
+  }
+  .header-audio_open {
+    left: 0;
+  }
+  .btn-320_display {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 85px;
+    border: none;
+    min-height: 45px;
+  }
+  .btn-320_display > span {
+    padding-left: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--medium-purpul-color);
+  }
+  .btn-320_display > svg {
+    position: absolute;
+    top: 14px;
+    left: -17px;
+    transition: transform .3s ease-in-out;
+  }
+  .btn-320_display:active > svg{
+    transform: rotate(45deg);
+  }
+  .btn-320_display:hover > svg{
+    transform: rotate(45deg);
+  }
+  .btn-320_display:focus > svg{
+    transform: rotate(45deg);
+  }
+  .header-bottom {
+    padding: 33px 0 10px 0;
+  }
+  .header-btn span:not(:last-child) {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .header-btn span:last-child {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .header-btn_size {
+    min-width: 107px;
+    max-width: 107px;
+  }
+  .header-btn svg {
+    left: 2px;
+  }
+  .header-text_margin {
+    margin-bottom: 2px;
+  }
+  .header-btn_border {
+    position: relative;
+    margin-right: 36px;
+  }
+  .header-btn_border::before {
+    content: " ";
+    position: absolute;
+    top: 9px;
+    right: -1px;
+    width: 1px;
+    height: 62px;
+    background-color: var(--medium-gray-color);
   }
 }

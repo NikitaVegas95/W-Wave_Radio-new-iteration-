@@ -198,6 +198,14 @@ body {
   position: relative;
 }
 
+.header-btn_display {
+  display: none;
+}
+
+.btn-320_display {
+  display: none;
+}
+
 .search-btn {
   padding: 3px;
   width: 26px;
@@ -219,14 +227,17 @@ body {
 
 .search-btn:focus::after {
   border-color: var(--light-purpul-color);
+  background-color: var(--light-purpul-color);
 }
 
 .search-btn:hover::after {
   border-color: var(--light-purpul-color);
+  background-color: var(--light-purpul-color);
 }
 
 .search-btn:active::after {
   border-color: var(--deep-purpul-color);
+  background-color: var(--deep-purpul-color);
 }
 
 .search-btn::before {
@@ -250,8 +261,9 @@ body {
   height: 8px;
   border: 1px solid var(--medium-purpul-color);
   border-radius: 50px;
+  background-color: var(--medium-purpul-color);
   transform: rotate(312deg);
-  transition: border .3s ease-in-out;
+  transition: border .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .header-btn {
