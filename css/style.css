@@ -282,9 +282,24 @@ body {
   word-break: break-word;
 }
 
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none-naw {
+  display: none;
+}
+
+.display-block-naw {
+  display: block;
+}
+
 .header-btn_focus {
   padding: 10px;
-
 }
 
 .header-btn_focus:focus {
@@ -464,7 +479,7 @@ body {
 
 .header__popup {
   position: relative;
-  padding: 60px;
+  padding: 61px 60px 60px 60px;
   max-width: 824px;
   min-height: 655px;
   width: 100%;
@@ -473,7 +488,8 @@ body {
 }
 
 .header__popup-text {
-  margin-bottom: 17px;
+  display: block;
+  margin-bottom: 12px;
   max-width: 114px;
   min-height: 48px;
   font-weight: 400;
@@ -483,7 +499,7 @@ body {
 }
 
 .header__popup-text_size {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   max-width: 461px;
   min-height: 30px;
   font-weight: 400;
@@ -494,7 +510,7 @@ body {
 
 .header__popup-text_margin {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   max-width: 176px;
   min-height: 20px;
 }
@@ -507,7 +523,7 @@ body {
 .header__popup-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .header__popup-label {
@@ -519,7 +535,7 @@ body {
 }
 
 .header__popup-input {
-  padding: 25px 35px;
+  padding: 24px 31px;
   display: block;
   width: 100%;
   min-height: 70px;
@@ -607,14 +623,141 @@ body {
   border-radius: 100px;
 }
 
-/*.header__popup-close:focus svg path{*/
-/*  fill: ;*/
-/*}*/
-
-/*.header__popup-close:active svg path{*/
-
-/*}*/
-
 .header__popup-close:hover svg path{
+  stroke: var(--deep-purpul-color);
+  transition: stroke .3s ease-in-out;
+}
+
+.header__popup-close:hover svg circle{
+  stroke: var(--deep-purpul-color);
+  transition: stroke .3s ease-in-out;
+}
+
+.header__popup-close:focus svg path{
+  stroke: var(--light-purpul-color);
+  transition: stroke .3s ease-in-out;
+}
+
+.header__popup-close:focus svg circle{
+  stroke: var(--light-purpul-color);
+  transition: stroke .3s ease-in-out;
+}
+
+.header__popup-close:active svg path{
+  stroke: var(--deep-purpul-color);
+  transition: stroke .3s ease-in-out;
+}
+
+.header__popup-close:active svg circle{
+  stroke: var(--deep-purpul-color);
+  transition: stroke .3s ease-in-out;
+}
+
+.header__popup-link:hover svg path {
+  fill: var(--medium-purpul-color);
+  transition: fill .3s ease-in-out;
+}
+
+.header__popup-link:active svg path {
+  fill: var(--light-purpul-color);
+  transition: fill .3s ease-in-out;
+}
+
+.header__popup-link:focus svg path {
   fill: var(--deep-purpul-color);
+  transition: fill .3s ease-in-out;
+}
+
+.header__popup-link_svg:hover svg path {
+  fill: var(--deep-darck-color);
+  transition: fill .3s ease-in-out;
+}
+
+.header__popup-link_svg:hover svg rect {
+  fill: var(--medium-purpul-color);
+  transition: fill .3s ease-in-out;
+}
+
+.header__popup-link_svg:active svg path {
+  fill: var(--deep-darck-color);
+  transition: fill .3s ease-in-out;
+}
+
+.header__popup-link_svg:active svg rect {
+  fill: var(--light-purpul-color);
+  transition: fill .3s ease-in-out;
+}
+
+.header__popup-link_svg:focus svg path {
+  fill: var(--deep-darck-color);
+  transition: fill .3s ease-in-out;
+}
+
+.header__popup-link_svg:focus svg rect {
+  fill: var(--deep-purpul-color);
+  transition: fill .3s ease-in-out;
+}
+
+/*hero ---------------------------------------------------------------------------- */
+
+.hero {
+  padding-top: 96px;
+  padding-bottom: 94px;
+  background-image: url("../img/hero/microphone.png");
+  background-repeat: no-repeat;
+  background-position: right top 30px;
+}
+
+.hero__title {
+  margin-bottom: 12px;
+  max-width: 633px;
+  min-height: 61px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  color: var(--deep-darck-color);
+}
+
+.hero__sub-title {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hero_text {
+  margin-bottom: 45px;
+  max-width: 633px;
+  min-height: 72px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--deep-darck-color);
+}
+
+.hero__btn {
+  padding: 26px 54px 24px 55px;
+  max-width: 246px;
+  min-height: 70px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--medium-purpul-color);
+  border-radius: 40px ;
+  transition: background-color .3s ease-in-out, border .3s ease-in-out;
+}
+
+.hero__btn:focus {
+  outline: 1px solid var(--deep-purpul-color);
+  background-color: var(--light-purpul-color);
+}
+
+.hero__btn:active {
+  background-color: var(--deep-purpul-color);
+}
+
+.hero__btn:hover {
+  background-color: var(--light-purpul-color);
 }
