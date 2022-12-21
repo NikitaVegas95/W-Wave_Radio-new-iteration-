@@ -761,3 +761,223 @@ body {
 .hero__btn:hover {
   background-color: var(--light-purpul-color);
 }
+
+/*podcasts -------------------------------------------------------------------------------- */
+
+.podcasts {
+  padding-top: 95px;
+  padding-bottom: 79px;
+  background-color: var(--light-gray-color);
+}
+
+.podcasts__title {
+  margin-bottom: 29px;
+  max-width: 227px;
+  min-height: 48px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  color: var(--deep-darck-color);
+}
+
+.podcasts__item {
+  display: flex;
+  max-width: 540px;
+  min-height: 140px;
+  width: 100%;
+  background-color: var(--white-color);
+}
+
+.podcasts__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(396px, 1fr));
+  gap: 30px;
+}
+
+.podcasts__picture {
+  position: relative;
+}
+
+.podcasts__picture img {
+  min-width: 112px;
+  height: 140px;
+}
+
+.podcasts__picture::before {
+  content: "14 июня";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 3px 6px 3px 7px;
+  max-width: 52px;
+  min-height: 16px;
+  background-color: var(--light-gray-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 9px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--deep-darck-color);
+}
+
+.podcasts__content {
+  width: 100%;
+}
+
+.podcasts__top {
+  position: relative;
+  padding: 24px 30px 23px 30px;
+}
+
+.podcasts__article__time {
+  display: block;
+  margin-bottom: 9px;
+  max-width: 30px;
+  min-height: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--deep-darck-color);
+}
+
+.podcasts__article__title {
+  margin-bottom: 2px;
+  max-width: 176px;
+  min-width: 176px;
+  min-height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: var(--deep-darck-color);
+}
+
+.podcasts__article__text-flex {
+  display: flex;
+  max-width: 55px;
+  min-width: 55px;
+}
+
+.podcasts__article__text {
+  max-width: 55px;
+  min-width: 40px;
+  min-height: 16px;
+  max-height: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--deep-gray-color);
+}
+
+.podcasts__article__text:not(:last-child) {
+  margin-right: 31px;
+}
+
+.podcasts__article__text svg {
+  margin-right: 6px;
+}
+
+.podcasts__article__text:hover svg path {
+  fill: var(--medium-purpul-color);
+  transition: fill .3s ease-in-out;
+}
+
+.podcasts__article__text:hover span {
+  color: var(--medium-purpul-color);
+  transition: color .3s ease-in-out;
+}
+
+.podcasts__article__text:focus svg path {
+  fill: var(--white-color);
+  transition: fill .3s ease-in-out;
+}
+
+.podcasts__article__text:focus span {
+  color: var(--white-color);
+  transition: color .3s ease-in-out;
+}
+
+.podcasts__article__text:focus {
+  background-color: var(--light-purpul-color);
+  outline: 2px solid var(--light-purpul-color);
+  transition: background-color .3s ease-in-out;
+}
+
+.podcasts__article__text:active span {
+  color: var(--deep-purpul-color);
+  transition: color .3s ease-in-out;
+}
+
+.podcasts__article__text:active svg path {
+  fill: var(--deep-purpul-color);
+  transition: fill .3s ease-in-out;
+}
+
+.podcasts__article__text:active svg {
+  fill: var(--deep-purpul-color);
+  transition: fill .3s ease-in-out;
+}
+
+.podcasts__bottom {
+  display: flex;
+  padding: 9px 0 3px 30px;
+  border-top: 1px solid var(--light-gray-color);
+  width: 100%;
+}
+
+.play-btn {
+  position: absolute;
+  top: 33px;
+  right: 33px;
+  display: flex;
+}
+
+.play-btn:focus svg circle {
+  stroke: var(--light-purpul-color);
+  transition: stroke .3s ease-in-out;
+}
+
+.play-btn:focus svg rect {
+  fill: var(--light-purpul-color);
+  transition: fill .3s ease-in-out;
+}
+
+.play-btn:focus svg path {
+  fill: var(--light-purpul-color);;
+  transition: fill .3s ease-in-out;
+}
+
+.play-btn:hover svg circle {
+  stroke: var(--medium-purpul-color);
+  transition: stroke .3s ease-in-out;
+}
+
+.play-btn:hover svg rect {
+  fill: var(--medium-purpul-color);
+  transition: fill .3s ease-in-out;
+}
+
+.play-btn:hover svg path {
+  fill: var(--medium-purpul-color);;
+  transition: fill .3s ease-in-out;
+}
+
+.play-btn:active svg circle {
+  fill: var(--deep-purpul-color);
+  stroke: var(--deep-purpul-color);
+}
+
+.play-btn:active svg path {
+  fill: var(--white-color);
+}
+
+.pause-btn {
+  display: none;
+}
