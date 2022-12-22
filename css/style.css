@@ -724,7 +724,7 @@ body {
   font-weight: 400;
 }
 
-.hero_text {
+.hero__text {
   margin-bottom: 45px;
   max-width: 633px;
   min-height: 72px;
@@ -766,7 +766,7 @@ body {
 
 .podcasts {
   padding-top: 95px;
-  padding-bottom: 79px;
+  padding-bottom: 94px;
   background-color: var(--light-gray-color);
 }
 
@@ -782,6 +782,7 @@ body {
 }
 
 .podcasts__item {
+  position: relative;
   display: flex;
   max-width: 540px;
   min-height: 140px;
@@ -789,7 +790,16 @@ body {
   background-color: var(--white-color);
 }
 
+.podcasts__item:nth-child(n+9) {
+  display: none;
+}
+
+.podcasts__item-more:nth-child(n+9) {
+  display: flex;
+}
+
 .podcasts__list {
+  margin-bottom: 60px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(396px, 1fr));
   gap: 30px;
@@ -800,17 +810,19 @@ body {
 }
 
 .podcasts__picture img {
+  max-width: 112px;
   min-width: 112px;
   height: 140px;
 }
 
-.podcasts__picture::before {
-  content: "14 июня";
+.podcasts__data {
   position: absolute;
   left: 0;
   bottom: 0;
-  padding: 3px 6px 3px 7px;
+  display: flex;
+  justify-content: center;
   max-width: 52px;
+  min-width: 51px;
   min-height: 16px;
   background-color: var(--light-gray-color);
   font-style: normal;
@@ -980,4 +992,47 @@ body {
 
 .pause-btn {
   display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.podcasts__btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.podcasts__btn {
+  padding: 24px 52px 22px 52px;
+  max-width: 246px;
+  min-width: 246px;
+  min-height: 70px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--medium-purpul-color);
+  border: 2px solid var(--medium-purpul-color);
+  border-radius: 40px;
+}
+
+.podcasts__btn:hover {
+  background-color: var(--medium-purpul-color);
+  color: var(--white-color);
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.podcasts__btn:focus {
+  background-color: var(--light-purpul-color);
+  color: var(--white-color);
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.podcasts__btn:active {
+  background-color: var(--deep-purpul-color);
+  color: var(--white-color);
+  border-color: var(--deep-purpul-color);
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, border .3s ease-in-out;
 }

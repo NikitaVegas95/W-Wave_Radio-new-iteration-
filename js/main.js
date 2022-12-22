@@ -8,12 +8,12 @@ let header = document.querySelector('header'),
     headerBtn = document.querySelector('.header-btn'),
     headerModal = document.querySelector('.header__modal'),
     headerPopupClose = document.querySelector('.header__popup-close'),
-    headerBtnPast = document.querySelector('.header-btn-past'),
     displayActive = document.querySelector('.display-active'),
     displayNone = document.querySelector('.display-none'),
     headerBtnLive = document.querySelector('.header-btn-live'),
     displayActiveNaw = document.querySelector('.display-active-naw'),
-    displayNoneNaw = document.querySelector('.display-none-naw');
+    displayNoneNaw = document.querySelector('.display-none-naw'),
+    podcastsBtn = document.querySelector('.podcasts__btn');
 
 
 
@@ -44,12 +44,14 @@ document.addEventListener('click', (e) => {
     }
 });
 
-headerBtnPast.addEventListener('click', () => {
-    displayActive.classList.toggle('display-none');
-    displayNone.classList.toggle('display-block');
+podcastsBtn.addEventListener('click', () => {
+    console.log('click');
+    let podcastsItem = document.getElementsByClassName('podcasts__item');
+    for (let i = 0; i < podcastsItem.length; i++) {
+        podcastsItem[i].classList.toggle('podcasts__item-more')
+    }
 });
 
-headerBtnLive.addEventListener('click', () => {
-    displayActiveNaw.classList.toggle('display-none-naw');
-    displayNoneNaw.classList.toggle('display-block-naw');
+podcastsBtn.addEventListener('click', () => {
+    podcastsBtn.classList.add('display-none')
 });
