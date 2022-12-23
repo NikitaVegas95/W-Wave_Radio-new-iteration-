@@ -802,10 +802,67 @@
           Ещё подкасты
         </button>
       </div>
-
     </div>
   </section>
+  <section class="broadcast">
+    <h2 aria-hidden="true" class="visually-hidden">Послушайте наши передачи</h2>
 
+    <div class="broadcast__left-content broadcast__left-content_top container ">
+      <h2 class="broadcast__title">Передачи</h2>
+      <label class="broadcast__label" for="select">
+        Автор:
+        <select class="broadcast__select" name="select" id="select">
+          <option value="Дмитрий_Гутенберг">Дмитрий Гутенберг</option>
+          <option value="Татьяна_Флеганова">Татьяна Флеганова</option>
+          <option value="Анна_Васильева">Анна Васильева</option>
+          <option value="Пётр_Дмитриевский">Пётр Дмитриевский</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="broadcast__left-content broadcast__left-content_bottom container container_768">
+      <picture class="broadcast__left-content-picture">
+        <source srcset="img/broadcast/mic-320.png" media="(max-width: 320px)">
+        <source srcset="img/broadcast/mic-768.png" media="(max-width: 768px)">
+        <source srcset="img/broadcast/mic.png" media="(max-width: 1024px)">
+        <img src="img/broadcast/mic.png" alt="mic">
+      </picture>
+        <div class="broadcast__btn-p-wrapper">
+          <button class="broadcast__btn btn-reset">
+            Архив
+          </button>
+          <p class="broadcast__text">
+            В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)
+          </p>
+        </div>
+    </div>
+
+    <div class="broadcast__right-content container">
+      <ul class="broadcast__list list-reset">
+        <li class="broadcast__item">
+          <article class="broadcast__wrapper">
+            <picture class="broadcast__article-picture">
+              <source srcset="img/broadcast/1-320.jpg" media="(max-width: 320px)">
+              <source srcset="img/broadcast/1.jpg" media="(max-width: 768px)">
+              <source srcset="img/broadcast/1.jpg" media="(max-width: 1024px)">
+              <img src="img/broadcast/1.jpg" alt="">
+            </picture>
+            <div class="broadcast__content">
+              <h3 class="broadcast__content-title"></h3>
+              <span class="broadcast__content-text"></span>
+              <a class="broadcast__content-link" href="#">
+                Подробнее
+                <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+
+  </section>
   <div class="header__modal">
     <div class="header__popup container">
       <button class="header__popup-close btn-reset">
