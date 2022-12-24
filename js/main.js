@@ -55,3 +55,39 @@ podcastsBtn.addEventListener('click', () => {
 podcastsBtn.addEventListener('click', () => {
     podcastsBtn.classList.add('display-none')
 });
+
+
+const list1 = document.getElementById("list1");
+const list2 = document.getElementById("list2");
+const list3 = document.getElementById("list3");
+const list4 = document.getElementById("list4");
+const list5 = document.getElementById("list5");
+const list6 = document.getElementById("list6");
+const select = document.getElementById("select");
+
+select.addEventListener("change", function(){
+    if(select.value === 'Дмитрий_Гутенберг'){
+        list1.classList.add('display');
+        if(list2.classList.contains('display')){
+            list2.classList.remove('display');
+        }
+    }
+    if(select.value === 'Татьяна_Флеганова'){
+        list2.classList.add('display');
+        if(list3.classList.contains('display')){
+            list3.classList.remove('display');
+        }
+    }
+    if(select.value === 'Анна_Васильева'){
+        list4.classList.add('display');
+        if(list5.classList.contains('display')){
+            list5.classList.remove('display');
+        }
+    }
+    if(select.value === 'Пётр_Дмитриевский'){
+        list5.classList.add('display');
+        if(list6.classList.contains('display')){
+            list6.classList.remove('display');
+        }
+    }
+});
