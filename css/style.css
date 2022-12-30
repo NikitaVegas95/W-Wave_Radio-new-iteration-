@@ -1160,21 +1160,23 @@ body {
   display: none;
 }
 
-.broadcast__left-content_bottom-768 {
+
+
+.broadcast-768 {
   display: none;
 }
 
-.broadcast__left-content-picture img {
+.broadcast-picture img {
   margin-bottom: 24px;
 }
 
-.broadcast__btn-p-wrapper {
+.btn-p-wrapper {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-.broadcast__btn {
+.broadcast-btn {
   margin-bottom: 12px;
   padding: 10px 55px;
   max-width: 160px;
@@ -1189,13 +1191,17 @@ body {
   border-radius: 77px;
 }
 
-.broadcast__text {
+.broadcast-text {
   max-width: 255px;
   min-height: 48px;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: var(--deep-gray-color);
+}
+
+.broadcast__wrapper {
+  position: relative;
 }
 
 .broadcast__list {
@@ -1260,8 +1266,79 @@ body {
 .broadcast__content-link:before {
   content: " ";
   position: absolute;
-  top: -7px;
-  right: -7px;
-  bottom: -7px;
-  left: -7px;
+  inset: -7px;
+}
+
+/*guests -------------------------------------*/
+
+.guests {
+  padding-top: 95px;
+  background-color: var(--deep-darck-color);
+}
+
+.guests__title {
+  margin-bottom: 12px;
+  max-width: 255px;
+  min-height: 48px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  color: var(--white-color);
+}
+
+.guests__sub-title {
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--deep-gray-color);
+}
+
+.guests__text {
+  margin-bottom: 50px;
+  max-width: 825px;
+  min-height: 64px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: var(--deep-gray-color);
+}
+
+.guests__list {
+  max-width: 730px;
+}
+
+.guests__sub-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 730px;
+  min-height: 112px;
+}
+.guests__sub-item {
+  max-width: 160px;
+  min-width: 160px;
+  min-height: 16px;
+}
+
+.guests__sub-item:not(:nth-child(4n)) {
+  margin-right: 30px ;
+}
+
+.guests__sub-item__btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--white-color);
+}
+
+.guests__item-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--white-color);
 }
